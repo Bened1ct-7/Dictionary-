@@ -79,7 +79,7 @@ header form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 1.7rem;
+  height: 2rem;
   gap: .3rem;
   margin-top: .7rem;
 }
@@ -98,6 +98,10 @@ header form input {
   width: 100%;
   border-radius: .3rem;
   outline: none;
+}
+
+header form input:focus {
+  background: #CCF0D9;
 }
 
 header form label i {
