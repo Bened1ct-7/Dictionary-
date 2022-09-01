@@ -371,7 +371,19 @@ footer .mail a {
 
 @media screen and (max-width: 350px) {
     html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    html {
+        font-size: 15px;
     }
 }
 
