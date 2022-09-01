@@ -7,6 +7,10 @@ const preLoader = document.querySelector('.preloader');
 
 let res, data;
 
+window.addEventListener('load', () => {
+   preLoader.classList.remove('active');
+})
+
 
 const fetchData = async () => {
   try {
