@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #56C898;
+  --text-white: #fff;
+  --main-text: #40B583;
+  --text-black: #111;
+}
+
+ul li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 16px;
+}
+
+#content {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: "ubuntu", sans-serif;
+}
+
+header {
+  background: var(--main-color);
+  color: crimson;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  max-width: 1000px;
+  justify-content: center;
+  flex-direction: column;
+  padding: .4rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: .3rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.7rem;
+  gap: .3rem;
+  margin-top: .7rem;
+}
+
+header form label {
+  height: 100%;
+  flex-basis: 75%;
+  position: relative;
+}
+
+header form input {
+  appearance: none;
+  border: 1px solid #bbb;
+  padding: 0 .5rem;
+  height: 100%;
+  width: 100%;
+  border-radius: .3rem;
+  outline: none;
+}
+
+header form label i {
+  position: absolute;
+  color: #bbb;
+  right: .5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header form button {
+  height: 100%;
+  flex-basis: 25%;
+  border: 1px solid #bbb;
+  border-radius: .3rem;
+}
+
+header form button:focus {
+  outline: none;
+}
+
+main {
+  
+}
+
+main .word{
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+main .word h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.main > div {
+  margin-bottom: 1rem;
+  padding: .7rem 0 .5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.main > div > h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-black);
+  text-transform: capitalize;
+}
+
+.audio-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.audio-list span {
+  font-size: 1.5rem;
+}
+
+.audio h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: "ubuntu", sans-serif;
+}
+
+main div.audio ul {
+  margin-top: 1rem;
+}
+
+main div.audio li {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+main div.audio ul li+li {
+  margin-top: 1rem;
+}
+
+main div.meaning,
+main div.m-div{
+  margin-bottom: 1rem;
+}
+
+div.m-div + div.m-div{
+  padding: .7rem 0 .4rem;
+  border-top: 1px solid var(--main-color);
+}
+
+main div.m-div > ul li {
+  width: 95%;
+  display: block;
+  margin: 1rem auto;
+}
+
+main div.m-div li span {
+  margin: .4rem 0;
+  display: block;
+}
+
+div.m-div li span.example {
+  font-style: italic;
+  text-transform: lowercase;
+  color: #333;
+  font-family: "Quicksand", sans-serif;
+}
+
+.o-list-item {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.d-list li span:nth-child(1)::before {
+ content: "📍";
+ margin-right: .2rem;
+}
+
+div.source-div {
+  border: none;
+}
+
+div.source-div a.link {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
+}
+
+footer {
+  padding: 1rem;
+  background: var(--main-color);
+  text-align: center;
+  color: #fff;
+}
+
+footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: .3rem;
+  font-family: "ubuntu", sans-serif;
+  color: crimson;
+}
+
+footer span {
+  color: #111;
+}
+
+footer .mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .mail i {
+  margin-right: .2rem;
+  color: crimson;
+}
+
+footer .mail a {
+  display: block;
+  text-decoration: none;
+  color: #111;
+}
+
+
+.main.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  border: none;
+}
+
+.main.active .section {
+  display: flex;
+}
+
+.section {
+  border: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+}
+
+.section p {
+  font-size: 2rem;
+  color: var(--main-text);
+  padding: 0 .5rem;
+  text-align: center;
+  border: none;
+}
+
+.preloader {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+.preloader .container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader .balls {
+  height: 4rem;
+  width: 6rem;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes moveX {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+  
+}
+
+.balls div {
+  height: .7rem;
+  width: .7rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  animation: moveX .7s cubic-bezier(0.19, 1, 0.22, 1) infinite alternate;
+}
+
+.balls div:nth-child(2) {
+  animation-delay: .2s;
+  opacity: .8;
+}
+
+.balls div:nth-child(3) {
+  animation-delay: .4s;
+  opacity: .6;
+}
+
+.balls div:nth-child(4) {
+  animation-delay: .6s;
+  opacity: .4;
+}
+
+.preloader.active {
+  display: block;
+}
+
+.m-title {
+  font-size: 1.35rem;
+}
+
+.error {
+  text-align: center;
+  margin-top: 1rem;
+  border: none
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 350px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    header .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
