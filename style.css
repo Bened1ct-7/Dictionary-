@@ -42,6 +42,10 @@ html {
   grid-template-rows: auto 1fr auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: 90%;
   max-width: 1000px;
@@ -300,6 +304,7 @@ footer .mail a {
 .preloader {
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   display: none;
   position: fixed;
   top: 0;
