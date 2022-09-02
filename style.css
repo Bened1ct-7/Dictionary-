@@ -378,6 +378,13 @@ footer .mail a {
   font-size: 1.1rem;
 }
 
+.error-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: .3rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
 @media screen and (max-width: 350px) {
     html {
         font-size: 12px;
