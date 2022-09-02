@@ -173,6 +173,7 @@ function displayError(item) {
   const errorDiv = document.createElement('div');
   errorDiv.className = 'error';
   const para = document.createElement('p');
+  para.className = "error-title";
   const para1 = document.createElement('p');
   const para2 = document.createElement('p');
   para.textContent = item.title;
